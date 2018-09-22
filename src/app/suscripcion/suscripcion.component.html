@@ -1,0 +1,173 @@
+<app-header></app-header>
+
+<div class="item-superior">
+  <div class="item-name">
+      <span class="icon-left-open" style="color:#b10053;cursor:pointer;"></span> Suscripción
+  </div>
+</div>
+<div class="item-inferior">
+  <div class="item-izquierdo">
+    <div class="margen">
+      <div class="botones-superiores">
+        <div class="boton-menu-activo">
+            <a>{{ btn_gestion }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ btn_online }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ btn_ventas }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ btn_mark }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ btn_soport }}</a>
+        </div>
+      </div>
+      
+      <div class="suscripcion-logo">
+        <div class="suscripcio-logo-img">
+          <img src="assets/img/gestion.svg" alt="">
+        </div>
+        <div class="suscripcion-logo-text">
+          Gestión
+        </div>
+
+      </div>
+      <div class="suscripcion-detalle">
+        <div class="linea1">PLAN</div>
+        
+        <div class="linea2">
+          <div class="select-plan">
+            <label for="btn-planes" class="text-btn-planes">
+            <ul>
+              <li>
+                <input type="checkbox" name="" id="btn-planes">
+                <span id="plan-select-text"><a> Planes  </a></span> <span class="icon-sort-down icon-dow2"></span>
+                <ul class="submenu-planes">
+                    <label *ngFor="let plans of planlist" for="btn-planes" (click)="ActualizarPlan(plans)"><li><a>{{ plans.plan }} </a></li></label>
+                    <!-- <label for="btn-planes" (click)="ActualizarPlan(2)"><li>Mega</li></label>
+                    <label for="btn-planes" (click)="ActualizarPlan(3)"><li>Mega</li></label>
+                    <label for="btn-planes" (click)="ActualizarPlan(4)"><li>Mega</li></label> -->
+                </ul>
+              </li>
+            </ul>
+            </label>
+          </div>
+          <div class="price-plan">
+             <div class="texto">
+              <span id="plan-select-price">$0</span>
+              </div>
+          </div>
+        </div>
+
+        <div class="linea3">
+          comparar planes
+        </div>
+
+        <div class="linea4">
+        </div>
+
+        <div class="linea5">
+          <span>NÚMERO DE USUARIOS</span>
+        </div>
+
+        <div class="linea6">
+          <span id="preci-user">0 por usuario/mes</span>
+        </div>
+
+        <div class="linea7">
+          <div class="num-user">
+              <input type="number" name="num-user" (blur)="updateNumberUser()" id="num-user" value="0">
+          </div>
+          <div class="price-num-user">
+            <span>$0</span>
+          </div>
+        </div>
+
+      </div>
+
+      
+      
+      
+    </div>
+  </div>
+  <div class="item-derecho">
+    <div class="margen2">
+      <div class="linea1">
+        <span>Resumen</span>
+      </div>
+      <div class="linea2">
+        <div class="ciclo-facturacion">Ciclo de facturación</div>
+        <div class="list-mes">
+            <label for="btn-mes" class="text-btn-mes">
+            <ul>
+              <li>
+                <input type="checkbox" name="" id="btn-mes">
+                <span id="mes-select-text">Mensual</span><span class="icon-sort-down icon-dow2"></span>
+                <ul class="submenu-mes">
+                    <label for="btn-mes" (click)="ActualizarMes('Anual','yearly')"><li>Anual</label>
+                    <label for="btn-mes" (click)="ActualizarMes('Mensual','monthly')"><li>Mensual</li></label>
+                </ul>
+              </li>
+            </ul>
+          </label>
+        </div>
+        <div class="pago-anual">Ahorre 10% con pago anual</div>
+        
+      </div>
+
+      <div class="linea3">
+
+      </div>
+
+      <div class="linea4">
+        <div class="texto1">Testa gestión <span id="plan-select-text-invoice">-</span></div>
+        <div class="monto1"><span id="plan-select-price-invoice"> $0</span></div>
+      </div>
+
+      <div class="linea5">
+        <div class="texto1">Usuarios: <span id="number-user-text-invoice">0</span></div>
+        <div class="monto1"><span id="number-user-price-invoice"> $0</span></div>
+      </div>
+
+      <div class="linea3">
+
+      </div>
+
+      <div class="linea6">
+        <div class="texto1">TOTAL</div>
+        <div class="monto1"><span id="price-invoice"></span></div>
+        <div class="iva">con impuestos/mes</div>
+      </div>
+
+      <div class="linea7">
+        <div class="acuerdo">
+          <label for="btn-acuerdos" (click)="habilitarBotonCaja()">
+          <input type="checkbox" name="btn-acuerdos" id="btn-acuerdos">
+          <!-- <label for="btn-acuerdos"> -->
+          <span class="icon-ok" name="check-btn" id="check-btn"></span>
+          <!-- </label> -->
+          </label>
+        </div>
+        <div class="acuerto-text">
+          <label for="btn-acuerdos" (click)="habilitarBotonCaja()">
+              Acepto el <a>Acuerdo de suscripción principal</a> y la <a>Política de privacidad</a> y entiendo que mi suscripcion comenzará hoy.
+          </label>
+        </div>
+      </div>
+
+      <a>
+      <div class="linea8" id="caja-btn">
+        
+        <span class="pasar-por-caja" id="pasar-por-caja" (click)="pasarPorCaja();">pasar por la caja</span>
+      
+      </div>
+    </a>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

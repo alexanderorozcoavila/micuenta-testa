@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    height: 62px;
+    background: #ffffff;
+    color: #b10053;
+}
+
+.user-circle2{
+    display: none;
+}
+
+#custom-overlay {
+    background-color: #fff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+  }
+.loading-spinner{
+    text-align: center;
+    vertical-align: middle;
+    /* display: table-cell; */
+    margin-top: calc((100vh/2) - 50px);
+}
+
+.loading-spinner img{
+    width: 100px;
+}
+
+
+
+
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+header nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 61px;
+}
+
+.logo-testa{
+    margin-left: 128px;
+    margin-top: 24px;
+}
+
+#btn-sub{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    height: 32px;
+    margin-right: 59px;
+    margin-top: 30px;
+}
+
+.user-circle{
+    font-size: 22px;
+    margin-right: 2px;
+    margin-top: -1px;
+    color: #b10053;
+    float:left;
+}
+
+.name-user{
+    padding: 0px 3px;
+    /* padding-top: 14px; */
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #0a4d7c;
+    cursor: pointer;
+
+}
+
+
+.menu li a{
+    padding-top: 20px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b10053;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-user{
+    display: flex;
+    margin-top: 22px;
+    margin-right: 123px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.name-userp{
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.icon-dow{
+    float: left;
+}
+
+.submenu-user{
+    display: none;
+    list-style: none;
+    background: #ffffff;
+    height: 112px;
+    width: 149px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.submenu-user li{
+    cursor: pointer;
+    padding: 1px 5px;
+    padding: 8px 7px;
+}
+
+.submenu-user li:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.submenu-user a{
+    font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.menu li:hover{
+    border-bottom: 3px solid #0a4d7c;
+    color: #0a4d7c;
+}
+
+.menu-active{
+    border-bottom: 3px solid #0a4d7c;
+    color: #0a4d7c;
+}
+
+.menu li:hover a{
+    color: #0a4d7c;
+}
+
+#btn-sub:checked ~ .submenu-user{
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+}
+
+.nav-menu .menu li{
+    /* width: 150px; */
+    text-align: center !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+html, body {
+    height: 100%;
+    }
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -56px;
+    }
+    body{
+        background: #f4f4f4;
+    }
+footer{
+    height: 56px;
+    width: 100%;
+    background-color: #0a4d7c;
+    bottom: 0;
+   clear: both;
+   
+}
+
+footer .contenedor-1{
+    float: left;
+    margin-left: 128px;
+    margin-top: 21px;
+}
+
+footer .contenedor-2{
+    float: right;
+    margin-right: 129px;
+    margin-top: 0px;
+}
+
+footer .contenedor a{
+    height: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #ffffff;
+    margin-top: 16px;
+}
+
+footer .contenedor img{
+    margin-left: 0px;
+    margin-top: 18px;
+    float: left;
+}
+
+footer .contenedor span{
+    margin-left: 13px;
+    margin-top: 18px;
+    float: left;
+    height: 21px;
+    font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.terminos{
+    margin-left: 26px;
+}
+

@@ -1,0 +1,189 @@
+.contenedor-list{
+    /* margin-top: 272px; */
+    margin-top: 200px;
+    margin-left: calc((100% - 1185px)/2);
+}
+.contenedor-list .item {
+    float: left;
+    width: 224px;
+    height: 224px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .contenedor-list .item:hover{
+    cursor: pointer;
+    width: 224px;
+    height: 224px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .item-superio{
+      height: 183px;
+      width: 224px;
+      border-bottom: 1px solid #cccccc;
+  }
+
+  .item-inferio{
+    height: 38px;
+    width: 224px;
+  }
+
+  .item-img{
+      padding: 32px 63px;
+      padding-bottom:0px;
+  }
+
+  .item-text{
+    height: 24px;
+    width: 224px;
+    padding-top: 16px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  .item-name{
+    width: 224px;
+    padding-top: 6px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0a4d7c;
+  }
+
+  .item-name-comprar{
+    width: 224px;
+    padding-top: 6px;
+    height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #b10053;
+  }
+
+  @media (max-width:1327px){
+
+    .contenedor-list{
+      margin-top: 89px;
+      margin-left: 24px;
+  }
+    .contenedor-list .item{
+      margin-bottom: 16px;
+    }
+
+  }
+
+  @media (max-width:1024px){
+    .contenedor-list{
+      margin-top: 89px;
+      margin-left: 24px;
+      margin-right: 24px;
+  }
+  .contenedor-list .item {
+      float: left;
+      width: 100%;
+      height: 112px;
+      margin-right: 16px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    }
+  
+    .contenedor-list .item:hover{
+      cursor: pointer;
+      width: 100%;
+      height: 112px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .item-superio{
+      height: 70px;
+      width: 100%;
+      border-bottom: 1px solid #cccccc;
+  }
+
+  .item-inferio{
+    height: 38px;
+    width: 100%;
+  }
+
+  .item-img{
+    float: left;
+    padding: 16px 25px;
+    padding-bottom:0px;
+}
+.item-img img{
+  height: 40px;
+}
+
+
+.item-text{
+  /* float: left; */
+  /* width: 224px; */
+  height: 24px;
+  padding-top: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.item-name{
+  /* width: 224px; */
+  padding: 6px 24px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0a4d7c;
+}
+
+.item-name-comprar{
+  /* width: 224px; */
+  padding: 6px 24px;
+  height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.33;
+letter-spacing: normal;
+text-align: left;
+color: #b10053;
+}
+  }

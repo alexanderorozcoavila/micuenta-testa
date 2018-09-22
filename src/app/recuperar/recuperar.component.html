@@ -1,0 +1,53 @@
+<div class="main">
+    <div class="imagen-principal">
+        <img src="/assets/img/bg-admin.png" alt="">
+    </div>
+    <div class="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                <div class="logo">
+                    <img src="/assets/img/color.svg" alt="">
+                </div>
+                <div class="bloque1">
+                    <span class="texto1">
+                        {{ texto1 }}
+                    </span>
+                </div>
+
+                <div *ngIf="titulo" class="bloque2">
+                    <p class="texto2">
+                        {{ texto2 }}
+                    </p>
+                </div>
+                <div *ngIf="campomail" class="mail">
+                    <input type="text" name="mail" id="mail" placeholder="E-mail">
+                </div>
+                <div *ngIf="campoclave" class="mail">
+                    <input type="text" name="clave" id="clave" placeholder="Nueva contraseña">
+                </div>
+                <div class="mensaje-error">error</div>
+                <div *ngIf="mensajeerror" class="bloque3">
+                    <p class="texto2">
+                        Requisitos:<br>-Debe tener al menos 5 caracteres<br>-Debe ser diferente de la dirección de correo electrónico<br>
+                    </p>
+                </div>
+
+                <div *ngIf="siguiente"  class="ingresar">
+                    <a (click)="recuperarClave();" >
+                      <button > {{ textobtn }} </button>
+                    </a>
+                </div>
+                <div *ngIf="actualizar"  class="ingresar">
+                    <a (click)="handleResetPassword();">
+                      <button > {{ textobtn }} </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    
+}
+body{
+    background: #ffffff;
+}
+header{
+    height: 62px;
+    background: #ffffff;
+    color: #b10053;
+}
+
+a{
+  text-decoration: none;
+}
+
+.imagen-principal{
+  height: auto;
+  min-height: 100vh;
+  width: 50%;
+  float: left;
+  background:#fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.imagen-principal img{
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+
+@media(min-width:1024px){
+    .formularios{
+        float: right;
+    }
+}
+
+@media(max-width:1024px){
+    .imagen-principal {
+        display: none !important;
+    } 
+    .formularios{
+      width:100% !important;
+      /* margin-top: 48px !important; */
+      float: left;
+    }
+    .formularios .margen{
+      /* margin-top: 48px !important; */
+    }
+    
+
+}
+
+.formularios{
+  /* border: 1px solid; */
+    height: 100vh;
+    min-height: 768px;
+    background: #ffffff;
+    /* border: 1px solid #b10053; */
+    width: 50%;
+}
+
+.formularios .margen{
+  /* border: 1px solid; */
+    margin-right: calc((100% - 335px)/2);
+    margin-left: calc((100% - 335px)/2);
+    background: #ffffff;
+}
+
+.formularios .margen .margeninterno{
+  /* border: 1px solid; */
+    margin-top: 80px;
+    /* margin-left: 80px; */
+    background: #ffffff;
+    width: 335px;
+}
+
+.margeninterno .logo{
+    text-align:center;
+    height: 30px;
+}
+
+.margeninterno .logo img{
+    height: 30px;
+}
+
+.margeninterno .mail{
+    height: 48px;
+    text-align: center;
+    width: 100%;
+    margin-top: 58px;
+
+}
+
+.margeninterno .mail input{
+    width: 100%;
+    border-bottom: 1px solid #9b9b9b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 48px;
+    background: transparent;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+
+.margeninterno .clave{
+    height: 48px;
+    text-align: center;
+    width: 100%;
+    margin-top: 39px;
+
+}
+
+.margeninterno .clave input{
+    width: 100%;
+    border-bottom: 1px solid #9b9b9b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 48px;
+    background: transparent;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+
+.margeninterno .ingresar{
+    height: 48px;
+    text-align: center;
+    width: 100%;
+    margin-top: 71px;
+}
+
+.margeninterno .ingresar button{
+    width: 224px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #b10053;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.margeninterno .ingresar button:hover{
+  background-color: #771241;
+  cursor: pointer;
+}
+
+.datos-subtitulo {
+    max-width: 336px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #4a4a4a;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+
+
+
+.mensaje-error{
+  height: 14px;
+  text-align: left;
+  width: 100%;
+  color: red;
+  font-size: 12px;
+  visibility: hidden;
+  margin-top: 2px;
+}
+
+.separador{
+    height: 14px;
+    /* text-align: center; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.loginredes{
+  margin-top: 38px;
+}
+
+
+.google-button{
+  float: left;
+  width: 160px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #4285f4;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.google-button:hover{
+  background-color:#094d7d;
+  cursor: pointer;
+}
+
+
+.logo-google{
+  width: 38px;
+  height: 38px;
+  border-radius: 2px;
+  /* border-radius: 1px; */
+  background-color: #ffffff;
+  float: left;
+  margin-left: 1px;
+  margin-top: 1px;
+  border: 1px solid #ffffff;
+}
+
+.logo-google img{
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* padding: 10px 10px; */
+}
+
+.text-button-google{
+  float: left;
+  margin-left: 11px;
+  margin-top: 13px;
+  width: 91px;
+  height: 16px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  background:transparent;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.text-button-google:hover{
+  background-color:#094d7d;
+  cursor: pointer;
+}
+
+
+/* kkkkkkk  */
+.facebook-button{
+  float:right;
+  width: 160px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #4867ad;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.facebook-button:hover{
+  background: #3b5998;
+  cursor: pointer;
+}
+
+
+.logo-facebook{
+  width: 38px;
+  height: 38px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  float: left;
+  margin-left: 1px;
+  margin-top: 1px;
+  border: 1px solid #ffffff;
+}
+
+.logo-facebook img{
+  height: 18px;
+  width: 18px;
+  float: left;
+  background-color: #4867ad;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* padding: 10px 10px; */
+}
+
+.text-button-facebook{
+  float: left;
+  margin-left: 11px;
+  margin-top: 13px;
+  width: 91px;
+  height: 16px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  background:transparent;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+
+.recuperar{
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  margin-top: 96px;
+  cursor: pointer;
+}
+
+.crear{
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+
+
+.recuperar .btn-recuperar{
+  margin-left: calc( (100% - 192px)/2 );
+  width: 192px;
+  height: 40px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #b10053;
+  padding-top: 7px;
+  cursor: pointer;
+  /* background-color: #eaeaea; */
+}
+
+.crear .btn-recuperar{
+  margin-left: calc( (100% - 240px)/2 );
+  width: 240px;
+  height: 40px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #b10053;
+  padding-top: 7px;
+  cursor: pointer;
+  /* background-color: #eaeaea; */
+}
+
+.crear .btn-recuperar:hover{
+  background-color: #eaeaea;
+  cursor: pointer;
+
+}
+
+.recuperar .btn-recuperar:hover{
+  background-color: #eaeaea;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- */
+
+.cuadro{
+    background-color: #fff;
+/*	padding-right: 15px;
+  padding-left: 15px;
+  */
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  height: 768px;
+  /*margin-top: 60px;*/
+}
+.imagen{
+  /*margin-left: -15px;
+  margin-right: -15px;*/
+}
+.imagen img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+.datos{
+  padding-top: 9%;
+  padding-top: 0%;
+  /*overflow:hidden;
+  /*margin-left: -15px;
+  margin-right: -15px;*/
+  display: flex;
+  text-align: center;
+  padding: 0;
+  
+}
+/* */
+.firebaseui-idp-list>.firebaseui-list-item {
+  margin-bottom: 0px;
+  text-align: center;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.firebaseui-idp-password{
+  display: none;
+}
+.firebaseui-idp-phone{
+  display: none;
+}
+.firebaseui-idp-google>.firebaseui-idp-text {
+  color: #fff;
+  padding-left: 10px;
+}
+.firebaseui-idp-google {
+  width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #4285f4;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 1px;
+}
+.firebaseui-idp-google, .firebaseui-idp-google:hover, .mdl-button.firebaseui-idp-google:active, .mdl-button.firebaseui-idp-google:focus {
+background-color:#1a58bf;}
+
+.firebaseui-idp-facebook {
+width: 100%;
+height: 40px;
+border-radius: 2px;
+background-color: #4867ad;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+padding: 1px;
+}
+.firebaseui-idp-facebook .firebaseui-idp-icon{
+  background-color: #4867ad;
+}
+.firebaseui-idp-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1px;
+}
+
+/**/
+.titulo{
+  margin-top: 120px;
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0%;
+}
+.titulo img{
+  display: inline-block;
+  height: 3.4em;
+  width: auto;
+}
+.titulo span{
+  color: #004d80;
+  font-size: 3.6em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.datos-email{
+  display: block;
+  max-width: 336px;
+  margin: 0 auto;
+  margin-top:7%;
+  margin-top: 36px;
+  margin-bottom: 96px;
+  margin-bottom: 46px;
+}
+.datos-campo{
+  width: 100%;
+  height: 32px;
+  line-height: 1.5;
+  font-size: 16px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom :1px solid #9b9b9b;
+  margin-bottom: 26px;
+  margin-top: 18px;
+  color:#d0021b;
+  letter-spacing: 0.045em;
+}
+
+.datos-boton{
+  width: 224px;
+  height: 40px;
+  
+  font-size:16px;
+  margin: 0 auto;
+  font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #ffffff;
+  margin-top: 48px;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #b10053;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.firebaseui-idp-google:hover{
+  background-color:#094d7d;
+}
+.firebaseui-card-content {
+  padding: 0px; 
+}
+.firebaseui-auth-container{
+  max-width: 336px;
+}
+.datos-boton:hover{
+  background-color: #771241;
+}
+.datos-subtitulo{
+  max-width: 336px;
+  height: 16px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #4a4a4a;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.datos-subtitulo span {
+  background: #fff;
+     padding: 0 10px 0 10px;
+  position: relative;
+  z-index: 5;
+}
+.datos-subtitulo:before {
+  content: "";
+  display: block;
+  border-top: solid 1px #eaeaea;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+.datos-links {
+  margin: 0 auto;
+  
+  text-align: center;
+  margin-top: 13%;
+  margin-top: 96px;
+  padding-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+}
+.datos-links a{
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  height: 40px;
+  letter-spacing: 0.6px;
+  color: #b10053;
+  margin: 0 auto;
+  width: auto;
+  padding: 0 8px;
+}
+.datos-links a:hover{
+  background-color: #eaeaea;
+}
+.contenedor-datos{
+  display: block;
+  width: auto;
+  position: relative;
+  margin: auto;
+}
+.datos-campo::placeholder {
+  color: #9b9b9b;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+::-ms-input-placeholder { 
+  color: #9b9b9b;
+}
+

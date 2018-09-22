@@ -1,0 +1,159 @@
+@media(min-width:1024px){
+    footer .contenedor a{
+        margin-left: 9px;
+        text-decoration: underline;
+    }
+    .nav-menu .menu li{
+        /* width: 150px !important; */
+        /* margin-left: 35px; */
+    }
+    footer{position: fixed;}
+    /* .link-1{
+        margin-right: 0px;
+        width: 132px;
+    }
+    .link-2{
+        margin-right: 0px;
+        width: 130px;
+    }
+    .link-3{
+        margin-right: 5px;
+        width: 94px;
+    } */
+    
+
+}
+
+
+@media (max-width:1024px){
+    .nav-menu .menu li{
+        width: 33% !important;
+        /* margin-left: 35px; */
+    }
+    .logo-testa{
+        margin-left: 16px;
+        margin-top: 16px;
+        height: 24px;
+    }
+    .name-userp{
+        display: none;
+    }
+
+    .menu-user{
+        /* margin-right:-5px; */
+        margin-right: 0px;
+        background: #ffffff;
+        position: absolute;
+        top: -65px;
+        right: 16px;
+        /* display: none; */
+    }
+    .user-circle{
+        /* display: none; */
+        cursor: pointer;
+    }
+
+    .icon-dow{
+        display: none;
+    }
+    /* .submenu-user{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 150px);
+        background: rgba(0,0,0,0.5);
+        top: 79px;
+        left: 0;
+        color: #ffffff;
+        transition: all 0.5s;
+        box-shadow: 0 0 0 0 ;
+        border-radius: 0;
+        transform: translateX(-100%);
+    } */
+
+    /* .submenu-user a{
+        color: #ffffff;
+    } */
+    #btn-sub:checked ~ .submenu-user{
+        /* transform: translateX(0%); */
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 32px;
+    
+    }
+
+    .user-circle2{
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 22px;
+    }
+
+    header nav{
+    position: absolute;
+    left: 0px;
+    background: #ffffff;
+    top: 56px;
+    }
+
+    .menu{
+        width: 100%;
+        height: 48px;
+        background: #ffffff;
+        margin-right: 0px;
+    }
+
+    .menu li{
+        width: 33%;
+    }
+
+    .link-1{
+        margin-right: 0px;
+        text-align: center;
+    }
+    .link-2{
+        margin-right: 0px;
+        text-align: center;
+    }
+    .link-3{
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    footer{
+    height: 88px;
+    /* position: absolute; */
+    }
+
+    footer .contenedor-1{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+        display: flex;
+    }
+
+    footer .contenedor-2{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+        display: flex;
+        margin-right:0px
+    }
+/* 
+    footer .contenedor a{
+        font-size: 12px;
+    } */
+
+    .terminos{
+        margin-right: 10px;
+        /* width: 45%; */
+    }
+    .politicas{
+        margin-left: 10px;
+        /* width: 45%; */
+    }
+
+    
+}

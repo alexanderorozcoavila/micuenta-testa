@@ -1,0 +1,82 @@
+<app-header></app-header>
+<main>
+<div class="contenedor-list">
+      <div style="float: left;width: 224px;margin-right: 16px;" *ngFor="let prod of product">
+        <div class="item {{ prod.cssstatus }}" id="itembtn">
+          <a *ngIf="prod.disable; else linkDisable" id="itemlink">
+            <div class="{{ prod.css1 }}">
+              <div class="{{ prod.css2 }}">
+                <img src="/assets/img/{{ prod.image }}" height="80px">
+              </div>
+              <div class="{{ prod.css3 }}">{{ prod.label }}</div>
+            </div>
+          </a>
+          <ng-template #linkDisable >
+            <a id="itemlink" href="{{ prod.linksbox }}">
+              <div class="{{ prod.css1 }}">
+                <div class="{{ prod.css2 }}">
+                  <img src="/assets/img/{{ prod.image }}" height="80px">
+                </div>
+                <div class="{{ prod.css3 }}">{{ prod.label }}</div>
+              </div>
+            </a>
+          </ng-template>
+
+        </div>
+        <a class="boton-inferior-item" href="{{ prod.links }}" >{{ prod.textlink }}</a>
+      </div>
+  <!-- <a href="/micuenta/2">
+  <div class="item">
+    <div class="item-superio">
+      <div class="item-img">
+          <img src="assets/img/mkt.svg" height="80px">
+      </div>
+      <div class="item-text">Marketing</div>
+    </div>
+    <div class="item-inferio">
+      <div class="item-name">ACTIVO</div>
+    </div>
+  </div>
+  </a>
+  <a href="/micuenta/3">
+  <div class="item">
+    <div class="item-superio rojo">
+      <div class="item-img">
+          <img src="assets/img/ventas.svg" height="80px">
+      </div>
+      <div class="item-text">Ventas</div>
+    </div>
+    <div class="item-inferio">
+      <div class="item-name-comprar">COMPRAR</div>
+    </div>
+  </div>
+  </a>
+  <a href="/micuenta/4">
+  <div class="item">
+    <div class="item-superio gris">
+      <div class="item-img">
+          <img src="assets/img/tiendai.svg" height="80px">
+      </div>
+      <div class="item-text-inactivo">Tienda online</div>
+    </div>
+    <div class="item-inferio">
+      <div class="item-name-inactivo">DESACTIVADO</div>
+    </div>
+  </div>
+  </a>
+  <a href="/micuenta/5">
+  <div class="item">
+    <div class="item-superio">
+      <div class="item-img">
+          <img src="assets/img/soporte.svg" height="80px">
+      </div>
+      <div class="item-text">Soporte</div>
+    </div>
+    <div class="item-inferio">
+      <div class="item-name">ACTIVO</div>
+    </div>
+  </div>
+  </a> -->
+</div>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,32 @@
+  <header>
+      <div class="contenedor">
+          <img src="assets/img/color.svg" class="logo-testa" height="24px" alt="">
+          <label for="btn-sub" class="name-user-btn2">
+              <span class="icon-user-circle user-circle2"></span>
+          </label>
+          <nav class="nav-menu">
+              <ul class="menu">
+                  <li class="link-1 {{ active_suite }}" ><a href="suite">SUITE</a></li>
+                  <li class="link-2" ><a href="micuenta/1">MIS CUENTAS</a></li>
+                  <li class="link-3" ><a href="http://soporte.testa.digital">SOPORTE</a></li>
+              </ul>
+              <ul class="menu-user">
+                  <li class="">
+                      <input type="checkbox" name="" id="btn-sub">
+                      <label for="btn-sub" class="name-user">
+                          <span class="icon-user-circle user-circle"></span>
+                          <span class="name-userp">{{ nombreUsuario }}</span> 
+                          <span class="icon-sort-down icon-dow"></span>
+                      </label>
+                      <ul class="submenu-user">
+                          <li><a>Editar perfil</a></li>
+                          <li><a>Cambiar contraseña</a></li>
+                          <a (click)="onClickLogout()"><li>Cerrar sesión</li></a>
+                      </ul>
+                  </li>
+              </ul>
+              
+          </nav>
+      </div>
+  </header>
+  

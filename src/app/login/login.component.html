@@ -1,0 +1,67 @@
+<div class="main">
+    <div class="imagen-principal">
+        <img src="/assets/img/bg-admin.png" alt="">
+    </div>
+    <div class="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                    <div class="logo">
+                        <img src="/assets/img/color.svg" alt="">
+                    </div>
+                    <div class="mail">
+                        <input type="text" name="email" id="email" [(ngModel)]="email" placeholder="E-mail">
+                    </div>
+                    <div id="error-correo" class="mensaje-error">error</div>
+                    <div class="clave">
+                        <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Clave">
+                    </div>
+                    <div class="mensaje-error">error</div>
+                    <div class="ingresar">
+                        <button (click)="onSubmitLogin();">INGRESAR</button>
+                    </div>
+                <div class="separador">
+                    <div class="datos-subtitulo"><span>Ingresar con:</span></div>
+                </div>
+                <div class="loginredes">
+                    <div class="google-button" (click)="onClickGoogleLogin();">
+                        <div class="logo-google">
+                            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="">
+                        </div>
+                        <div class="text-button-google">
+                                Google
+                        </div>
+                    </div>
+
+                    <div class="facebook-button">
+                        <div class="logo-facebook">
+                            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg" alt="">
+                        </div>
+                        <div class="text-button-facebook">
+                                Facebook
+                        </div>
+                    </div>
+                        <!--  -->
+                </div>
+                <div class="recuperar">
+                    <a href="/recuperar">
+                        <div class="btn-recuperar">
+                                ¿Olvidó su contraseña?
+                        </div>
+                    </a>
+                </div>
+                <div class="crear">
+                    <a href="/registro">
+                        <div class="btn-recuperar">
+                                ¿Primera vez que visita Testa?
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

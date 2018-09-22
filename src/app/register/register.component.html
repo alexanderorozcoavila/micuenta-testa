@@ -1,0 +1,234 @@
+<div class="main">
+  <div class="imagen-principal">
+      <img src="/assets/img/bg-admin.png" alt="">
+  </div>
+  <div *ngIf="step0" class="formularios" id="formularios">
+      <div class="margen">
+          <div class="margeninterno">
+              <div class="logo">
+                  <img src="/assets/img/shape2.svg" alt="">
+              </div>
+              <div class="bloque1">
+                    <span class="texto1">
+                        Comencemos!
+                    </span>
+                </div>
+                <div class="bloque2">
+                    <p class="texto2">
+                        Regístrece con su dirección de trabajo
+                    </p>
+                </div>
+                <form (submit)="onSubmitAddUser()" id="form1">  
+                    <div class="mail">
+                        <input type="text" name="email" id="email" [(ngModel)]="email" placeholder="E-mail">
+                    </div>
+                    <div id="error-correo" class="mensaje-error">error</div>
+                    <div class="clave">
+                        <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Clave">
+                    </div>
+                    <div id="error-clave" class="mensaje-error">error</div>
+                    <div class="ingresar">
+                        <!-- <a href="/register/step1"> -->
+                            <input type="submit" value="INGRESAR">
+                        <!-- </a> -->
+                    </div>
+                </form>
+              <div class="separador">
+                  <div class="datos-subtitulo"><span>Ingresar con:</span></div>
+              </div>
+              <div class="loginredes">
+                    <div class="google-button" (click)="onClickGoogleLogin();">
+                        <div class="logo-google">
+                            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="">
+                        </div>
+                        <div class="text-button-google">
+                                Google
+                        </div>
+                    </div>
+
+                    <div class="facebook-button" (click)="onClickFacebookLogin();">
+                        <div class="logo-facebook">
+                            <img src="/assets/img/Facebook_logo.png" alt="">
+                        </div>
+                        <div class="text-button-facebook">
+                                Facebook
+                        </div>
+                    </div>
+                        <!--  -->
+                </div>
+              
+          </div>
+          <div class="terminos-condiciones">
+              <span>
+                    <a>Politica de privacidad</a>  | <a>Términos y condiciones</a>
+              </span>
+          </div>
+      </div>
+  </div>
+
+  <div *ngIf="step1" class="formularios" id="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                <div class="logo">
+                    <img src="/assets/img/shape2.svg" alt="">
+                </div>
+                <div class="bloque1">
+                    <div class="margen-bloque">
+                        <span class="texto1">
+                                Elija un producto para su empresa
+                        </span>
+                    </div>
+                      
+                </div>
+                <div *ngFor="let prod of product">
+                <a (click)="GuardarMisServicios(prod.id,prod.label,prod.domain,prod.provisioning)">
+                    <div class="productos separacion1">
+                        <img src="/assets/img/{{ prod.image }}" alt="">
+                        <span>{{ prod.label }}</span>
+                    </div>
+                </a>
+                </div>
+                <div class="terminos-condiciones">
+                    <span>
+                            <a>Politica de privacidad</a>  | <a>Términos y condiciones</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="step2" class="formularios" id="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                <div class="logo">
+                    <img src="/assets/img/shape2.svg" alt="">
+                </div>
+                <div class="bloque1">
+                      <span class="texto1">
+                            Contanos sobre tu empresa
+                      </span>
+                </div>
+                <div class="campos">
+                    <input type="text" name="nameORG" id="nameORG" placeholder="Nombre">
+                </div>
+                <div class="mensaje-descripcion">Ingrese el nombre de su empresa</div>
+                <div id="error-empresa" class="mensaje-error">error</div>
+                <div class="campos">
+                    <label for="btn-planes" class="text-btn-planes">
+                        <ul>
+                            <li>
+                            <input type="checkbox" name="" id="btn-planes">
+                            <span id="plan-select-text"><a>1 - 9</a></span> <span class="icon-sort-down icon-dow2"></span>
+                            <ul class="submenu-planes">
+                                <label for="btn-planes" (click)="ActualizarValor('Más de 5000')"><li>Más de 5000</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('1000 -  4999')"><li>1000 -  4999</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('500 - 999')"><li>500 - 999</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('250 - 499')"><li>250 - 499</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('100 - 249')"><li>100 - 249</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('50 - 99')"><li>50 - 99</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('10 - 49')"><li>10 - 49</li></label>
+                                <label for="btn-planes" (click)="ActualizarValor('1 - 9')"><li>1 - 9</li></label>
+                            </ul>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="mensaje-descripcion empleados-text">Seleccione #de empleados.</div>
+                <div id="error-empleados" class="mensaje-error">error</div>
+                <div class="ingresar">
+                  <a (click)="GuardarMiOrgnaizacion();">
+                    <button class="max-widt">SIGUIENTE</button>
+                  </a>
+                </div>
+                <div class="terminos-condiciones">
+                    <span>
+                            <a>Politica de privacidad</a>  | <a>Términos y condiciones</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="step3" class="formularios" id="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                <div class="logo">
+                    <img src="/assets/img/shape2.svg" alt="">
+                </div>
+                <div class="bloque1">
+                      <span class="texto1">
+                            Contanos sobre vos
+                      </span>
+                </div>
+                <div class="campos">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                </div>
+                <div id="error-name" class="mensaje-error">error</div>
+                <div class="campos">
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellido">
+                </div>
+                <div id="error-lastname" class="mensaje-error">error</div>
+                <div class="campos">
+                    <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                </div>
+                <div id="error-phone" class="mensaje-error">error</div>
+                <div class="campos">
+                    <label for="btn-planes" class="text-btn-planes">
+                        <ul>
+                            <li>
+                            <input type="checkbox" name="" id="btn-planes">
+                            <span id="plan-select-text"><a>Departamento</a></span> <span class="icon-sort-down icon-dow2"></span>
+                            <ul class="submenu-planes">
+                                <label *ngFor="let sec of sector" for="btn-planes" (click)="ActualizarValor(sec.name)"><li>{{ sec.name }}</li></label>
+                            </ul>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+                <div id="error-dept" class="mensaje-error">error</div>
+                <div class="campos puesto-text">
+                    <input type="text" name="job" id="job" placeholder="Su puesto">
+                </div>
+                <div class="mensaje-descripcion">Ingrese el título de su trabajo</div>
+                <div id="error-trabajo" class="mensaje-error">error</div>
+                <div class="ingresar">
+                  <a (click)="GuardarMiContacto();">
+                    <button class="max-widt">SIGUIENTE</button>
+                  </a>
+              </div>
+                <div class="terminos-condiciones">
+                    <span>
+                            <a>Politica de privacidad</a>  | <a>Términos y condiciones</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="step4" class="formularios" id="formularios">
+        <div class="margen">
+            <div class="margeninterno">
+                <div class="logo">
+                    <img src="/assets/img/shape2.svg" alt="">
+                </div>
+                <div class="bloque1">
+                      <span class="texto1">
+                            {{ mensajeStep4 }} {{ serviceStep4 }}
+                      </span>
+                </div>
+                <div *ngIf="viewStep4" class="bloque4">
+                    <div class="link">
+                        <span>
+                        https://{{ dominioStep4 }}
+                        </span>
+                    </div>
+                </div>
+                <div *ngIf="viewStep4" class="mensaje-descripcion center">Aquí es donde accederá a su nueva cuenta. Ponga como favorito este sitio</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+

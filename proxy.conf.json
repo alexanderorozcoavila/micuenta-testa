@@ -1,0 +1,7 @@
+{
+  "/esb-1.0.0/*": {
+    "target": "http://esb.testa.digital",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

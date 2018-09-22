@@ -1,0 +1,84 @@
+<app-header></app-header>
+
+<div class="item-superior">
+  <div class="item-name">
+      {{ name }}
+  </div>
+  <div class="item-edit-perfil" >
+      <span class="icon-pencil"></span><span class="text-edit-btn">{{ datatest.btn_edit }}</span>  
+  </div>
+</div>
+<div class="item-inferior">
+  <div class="item-izquierdo">
+    <div class="margen">
+      <div class="botones-superiores">
+        <div *ngFor="let prod of product" class="boton-menu-activo">
+            <a>{{ prod.label }}</a>
+        </div>
+        <!-- <div class="boton-menu">
+            <a>{{ datatest.btn_online }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ datatest.btn_ventas }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ datatest.btn_mark }}</a>
+        </div>
+        <div class="boton-menu">
+            <a>{{ datatest.btn_soport }}</a>
+        </div> -->
+      </div>
+
+      <div class="texto-1">{{ datatest.title_1 }}</div>
+      <div class="texto-2"> {{ datatest.empresa_name }} </div>
+      <div class="texto-3">
+          <p>
+          {{ datatest.title_2 }}
+          <a>{{ datatest.mail_empresa }}</a>
+        </p>
+        </div>
+      <div class="texto-4">{{ datatest.title_3 }}</div>
+      <div class="texto-6">{{ datatest.title_4 }}
+          {{ datatest.dominio }}</div>
+      <div class="texto-7"><a>{{ datatest.subdominio }}</a></div>
+    </div>
+  </div>
+  <div class="item-derecho">
+    <div class="margen2">
+      <div class="estadof">
+          {{ datatest.t_invoice }}
+      </div>
+      <div class="{{ datatest.ct1_invoice }}">
+          <p>{{ datatest.t1_invoice }}</p>
+      </div>
+      <div *ngIf="datatest.mostrar;" class="ultimaf">
+          {{ datatest.t2_invoice }}
+      </div>
+      <div *ngIf="datatest.mostrar;" class="ultmaf-detalle">
+        <div class="detalle-margen">
+            <div class="textpo1">Fecha de emisión</div>
+            <div class="textpo2">10/04/2018</div>
+            <div class="textpo3">Número de factura</div>
+            <div class="textpo4">6516-19225046</div>
+            <div class="textpo5">Fecha de vencimiento</div>
+            <div class="textpo6">26/04/2018</div>
+            <div class="textpo7">Importe</div>
+            <div class="textpo8">$547,50</div>
+            <div class="textpo9">
+                <a href="">Descargar</a>
+            </div>
+        </div>
+      </div>
+        <a href="/suscripcion">
+            <div *ngIf="datatest.btn_comprar;" class="btn_comprar btn_comprart">
+                COMPRAR AHORA
+            </div>
+        </a>
+      <div *ngIf="datatest.mostrar" class="verfacturas">
+          <a href="/factura"> {{ datatest.btn_all_invoice }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
